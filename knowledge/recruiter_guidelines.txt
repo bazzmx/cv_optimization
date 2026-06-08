@@ -1,0 +1,224 @@
+# RECRUITER SCREENING RULES
+
+## Objective
+
+Evaluate the CV from the perspective of a recruiter performing an initial screening in less than 30 seconds.
+
+The analysis should focus on clarity, credibility, relevance and impact.
+
+---
+
+# First Impression Review
+
+Recruiters typically scan:
+
+1. Current role.
+2. Professional title.
+3. Most recent experience.
+4. Key skills.
+5. Evidence of impact.
+
+Evaluate whether those elements are immediately visible.
+
+---
+
+## Professional Headline
+
+A strong CV should communicate:
+
+* Who the candidate is.
+* Primary specialization.
+* Seniority level.
+* Domain expertise.
+
+Examples:
+
+Strong:
+Senior NLP Engineer | LLM Systems | Information Extraction
+
+Weak:
+Software Professional
+
+---
+
+## Professional Summary
+
+Evaluate whether the summary:
+
+* Is concise.
+* Communicates value.
+* Highlights specialization.
+* Reflects career direction.
+
+Penalize:
+
+* Generic statements.
+* Buzzword-heavy descriptions.
+* Empty claims.
+
+---
+
+## Experience Relevance
+
+Review:
+
+* Relevance to target role.
+* Career consistency.
+* Domain alignment.
+* Technical depth.
+
+Recruiters prioritize relevance over volume.
+
+---
+
+## Achievement-Based Writing
+
+Experience should emphasize:
+
+* Results.
+* Outcomes.
+* Business impact.
+* Technical impact.
+
+Strong examples:
+
+* Increased model accuracy by 18%.
+* Reduced infrastructure costs by 30%.
+* Automated manual processes saving 15 hours per week.
+
+Weak examples:
+
+* Responsible for...
+* Worked on...
+* Participated in...
+
+---
+
+## Career Progression
+
+Evaluate:
+
+* Promotions.
+* Increasing responsibility.
+* Leadership growth.
+* Technical growth.
+
+Identify:
+
+* Career stagnation.
+* Unexplained gaps.
+* Repeated lateral moves without progression.
+
+Do not automatically penalize career changes.
+
+Context matters.
+
+---
+
+## Credibility Assessment
+
+Check consistency between:
+
+* Claimed skills.
+* Experience.
+* Projects.
+* Certifications.
+
+Penalize:
+
+* Inflated claims.
+* Unrealistic technology breadth.
+* Unsupported expertise.
+
+---
+
+## Technical Profiles
+
+For technical candidates:
+
+Evaluate:
+
+* Architecture experience.
+* System design exposure.
+* Production experience.
+* Scalability experience.
+* Deployment experience.
+* Observability and reliability awareness.
+
+Reward demonstrated impact over tool quantity.
+
+---
+
+## Project Evaluation
+
+Projects should demonstrate:
+
+* Ownership.
+* Complexity.
+* Real outcomes.
+* Measurable value.
+
+Penalize:
+
+* Tutorial projects.
+* Vague descriptions.
+* Missing outcomes.
+
+---
+
+## Communication Quality
+
+Evaluate:
+
+* Clarity.
+* Conciseness.
+* Readability.
+* Grammar.
+* Structure.
+
+The CV should be skimmable.
+
+A recruiter should understand the profile within seconds.
+
+---
+
+## Differentiation
+
+Assess whether the candidate stands out through:
+
+* Specialized expertise.
+* Rare combinations of skills.
+* Measurable achievements.
+* Leadership.
+* Research contributions.
+* Open source contributions.
+* Publications.
+
+---
+
+## Recruiter Scoring Dimensions
+
+Score from 0-10:
+
+* First Impression
+* Clarity
+* Relevance
+* Credibility
+* Achievements
+* Career Progression
+* Differentiation
+
+Provide an overall recruiter score.
+
+---
+
+## Final Recruiter Decision
+
+Classify:
+
+* Strong Interview Candidate
+* Potential Interview Candidate
+* Requires Revision
+* Weak Match
+
+Explain the reasoning.

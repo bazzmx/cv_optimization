@@ -1,0 +1,212 @@
+# ATS OPTIMIZATION RULES
+
+## Objective
+
+Evaluate whether the CV can be correctly parsed, indexed and ranked by modern Applicant Tracking Systems (ATS).
+
+The analysis must focus on machine readability, keyword relevance, structural consistency and ATS compatibility.
+
+---
+
+# ATS Formatting Rules
+
+## Document Structure
+
+The CV should:
+
+* Use a single-column layout.
+* Follow a predictable top-to-bottom structure.
+* Avoid complex visual designs.
+* Maintain consistent spacing and formatting.
+
+Penalize:
+
+* Multi-column layouts.
+* Sidebars.
+* Magazine-style templates.
+* Visual-heavy designs.
+
+---
+
+## ATS Parsing Compatibility
+
+The CV should avoid:
+
+* Tables.
+* Text boxes.
+* Floating elements.
+* Headers containing critical information.
+* Footers containing critical information.
+* Icons replacing text.
+* Embedded graphics.
+* Charts.
+* Images.
+* Logos.
+
+These elements frequently break ATS parsers.
+
+---
+
+## Section Naming
+
+Preferred section titles:
+
+* Professional Summary
+* Work Experience
+* Professional Experience
+* Employment History
+* Education
+* Skills
+* Technical Skills
+* Certifications
+* Projects
+* Languages
+
+Penalize:
+
+* Creative section names.
+* Ambiguous section titles.
+* Marketing-style headings.
+
+Examples:
+
+Bad:
+
+* My Journey
+* What I Bring
+* Career Adventures
+
+Good:
+
+* Work Experience
+* Skills
+* Education
+
+---
+
+## Contact Information
+
+The CV should contain:
+
+* Full name
+* Email
+* Phone number
+* LinkedIn (if available)
+
+Contact information should appear in the document body.
+
+Penalize:
+
+* Contact data inside headers.
+* Contact data inside images.
+* Missing professional links.
+
+---
+
+## File Readability
+
+The CV should:
+
+* Be exportable as PDF or DOCX.
+* Contain selectable text.
+* Avoid scanned content.
+
+Penalize:
+
+* Image-based PDFs.
+* OCR artifacts.
+* Broken text extraction.
+
+---
+
+## Keyword Optimization
+
+Evaluate alignment between CV content and expected market terminology.
+
+Check:
+
+* Role-specific keywords.
+* Technologies.
+* Certifications.
+* Methodologies.
+* Industry terminology.
+
+Penalize:
+
+* Generic descriptions.
+* Missing core keywords.
+* Keyword mismatch between experience and target role.
+
+Do not reward keyword stuffing.
+
+Keywords must appear naturally inside achievements and experience descriptions.
+
+---
+
+## Skill Representation
+
+Skills should:
+
+* Match experience sections.
+* Be supported by evidence.
+* Appear in project descriptions.
+
+Penalize:
+
+* Skills listed without evidence.
+* Excessive skill lists.
+* Technology dumping.
+
+---
+
+## Dates and Employment History
+
+Check:
+
+* Consistent date formats.
+* Chronological ordering.
+* Clear employer names.
+* Clear role names.
+
+Penalize:
+
+* Missing dates.
+* Ambiguous timelines.
+* Unclear career progression.
+
+---
+
+## Achievement Quality
+
+Strong ATS signals include:
+
+* Metrics.
+* Quantified outcomes.
+* Business impact.
+* Process improvements.
+* Cost reductions.
+* Revenue impact.
+* Performance gains.
+
+Examples:
+
+Good:
+"Reduced inference latency by 35%."
+
+Bad:
+"Worked on optimization."
+
+---
+
+## ATS Scoring Dimensions
+
+Score from 0-10:
+
+* Formatting
+* Parsing Compatibility
+* Keywords
+* Skills
+* Experience Clarity
+* Achievement Quality
+
+Provide an overall ATS readiness score.

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cv-rag-service
+  namespace: cv-rag
+spec:
+  selector:
+    app: cv-optimization
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+  type: ClusterIP

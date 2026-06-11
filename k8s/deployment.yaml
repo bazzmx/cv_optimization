@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cv-optimization
+  namespace: cv-rag
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cv-optimization
+  template:
+    metadata:
+      labels:
+        app: cv-optimization
+    spec:
+      imagePullSecrets:
+        - name: regcred
+      containers:
+        - name: cv-optimization
+          image: bazzmx/cv-optimization:dev
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8000
+          env:
+            - name: LLM_PROVIDER
+              value: "ollama"
+
+            - name: OLLAMA_BASE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: llm-config
+                  key: OLLAMA_BASE_URL
+
+            - name: OLLAMA_LLM_MODEL
+              value: "gemma4:e2b-mlx"
+
+            - name: OLLAMA_EMBEDDING_MODEL
+              value: "nomic-embed-text"
+
+            - name: CHROMA_PATH
+              value: "/data/chroma"
+          volumeMounts:
+            - mountPath: /data/chroma
+              name: chroma-storage
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "250m"
+            limits:
+              memory: "1Gi"
+              cpu: "1000m"
+      volumes:
+        - name: chroma-storage
+          persistentVolumeClaim:
+            claimName: chroma-pvc

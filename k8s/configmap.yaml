@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: llm-config
+  namespace: cv-rag
+data:
+  OLLAMA_BASE_URL: "http://host.docker.internal:11434"

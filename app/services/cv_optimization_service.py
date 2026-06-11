@@ -1,5 +1,3 @@
-from pathlib import Path
-
 from app.domain.schemas.cv import CVAnalysisResponse
 from app.infra.llm.provider import get_llm
 from app.infra.pdf.extractor import extract_pdf_text
@@ -17,15 +15,6 @@ class CVAnalysisService:
         self.llm = get_llm()
         self.vectorstore = ChromaService()
 
-    def _load_knowledge_base(self):
-        """Load knowledge base from the knowledge folder."""
-        logger.info("Loading knowledge base from the knowledge folder")
-        knowledge_path = Path("knowledge")
-
-        for file in knowledge_path.glob("*.txt"):
-            content = file.read_text(encoding="utf-8")
-            self.vectorstore.add_documents(content)
-
     async def analyze(
         self, pdf_bytes: bytes, job_offer: str | None = None
     ) -> CVAnalysisResponse:
@@ -35,9 +24,7 @@ class CVAnalysisService:
 
         logger.info("CV analysis started")
 
-        self._load_knowledge_base()
         cv_text = extract_pdf_text(pdf_bytes)
-        self.vectorstore.add_documents(cv_text)
 
         retrieved_docs = self.vectorstore.similarity_search(
             query="CV best practices and ATS optimization",

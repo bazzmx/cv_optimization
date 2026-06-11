@@ -11,18 +11,15 @@ from app.core.logger import logger
 
 
 class ChromaService:
-    """Chroma service.
-    This service provides an interface to the Chroma vector store, allowing to add documents
-    and perform similarity search.
-    """
-
     def __init__(self):
         """Initialize the Chroma service with the appropriate embeddings."""
         if settings.LLM_PROVIDER == "ollama":
             self.embeddings = OllamaEmbeddings(
-                base_url=settings.OLLAMA_BASE_URL, model=settings.OLLAMA_EMBEDDING_MODEL
+                base_url=settings.OLLAMA_BASE_URL,
+                model=settings.OLLAMA_EMBEDDING_MODEL,
             )
-        if settings.LLM_PROVIDER == "openai":
+
+        elif settings.LLM_PROVIDER == "openai":
             self.embeddings = OpenAIEmbeddings(api_key=settings.OPENAI_API_KEY)
 
         Path(settings.chroma_path).mkdir(
@@ -55,3 +52,11 @@ class ChromaService:
         """Perform similarity search in the vector store."""
         logger.info("Performing similarity search")
         return self.vectorstore.similarity_search(query, k=k)
+
+    def clear(self):
+        """Clear the vector store."""
+        self.vectorstore.delete_collection()
+        self.vectorstore = Chroma(
+            persist_directory=settings.chroma_path,
+            embedding_function=self.embeddings,
+        )

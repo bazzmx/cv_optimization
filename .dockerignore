@@ -1,0 +1,16 @@
+.git
+.gitignore
+
+.idea
+.vscode
+
+.venv
+
+__pycache__
+*.pyc
+
+chroma_db
+k8s
+tests
+
+.env

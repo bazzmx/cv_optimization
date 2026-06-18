@@ -1,10 +1,10 @@
+import logging
 import sys
 from contextvars import ContextVar
 
-import logging
 from loguru import logger
-from app.core.config import settings
 
+from app.core.config import settings
 
 correlation_id_context: ContextVar[str] = ContextVar(
     "correlation_id",

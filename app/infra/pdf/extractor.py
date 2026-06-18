@@ -1,4 +1,5 @@
 import fitz
+
 from app.core.logger import logger
 
 

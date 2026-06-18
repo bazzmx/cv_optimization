@@ -1,8 +1,8 @@
+from app.core.logger import logger
 from app.domain.schemas.cv import CVAnalysisResponse
 from app.infra.llm.provider import get_llm
 from app.infra.pdf.extractor import extract_pdf_text
 from app.infra.vectorstore.chroma import ChromaService
-from app.core.logger import logger
 
 
 class CVAnalysisService:

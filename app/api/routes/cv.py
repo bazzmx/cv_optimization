@@ -1,13 +1,10 @@
 from typing import Annotated
 
-from fastapi import APIRouter, Form
-from fastapi import File
-from fastapi import HTTPException
-from fastapi import UploadFile
+from fastapi import APIRouter, File, Form, HTTPException, UploadFile
 
+from app.core.logger import logger
 from app.domain.schemas.cv import CVAnalysisResponse
 from app.services.cv_optimization_service import CVAnalysisService
-from app.core.logger import logger
 
 router = APIRouter(prefix="/cv", tags=["cv"])
 

@@ -1,10 +1,7 @@
 from fastapi import FastAPI
 
+from app.api.middlewares.correlation import CorrelationIdMiddleware
 from app.api.routes.cv import router as cv_router
-
-from app.api.middlewares.correlation import (
-    CorrelationIdMiddleware,
-)
 from app.core.logger import configure_logging
 
 configure_logging()

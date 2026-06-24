@@ -1,8 +1,12 @@
 # CV Optimization Service
 
-Uses python 3.14
+This service aims to optimize resumes for specific job descriptions. It uses ChromaDB and LangChain along with a LLM 
+model to process the recruiting guidelines and the provided resume in order to generate a list of recommendations to 
+improve the resume for an optional specific job description.
 
 ## Installation
+
+Uses python 3.14
 
 ### Ollama
 
@@ -92,7 +96,7 @@ This also assumes Ollama is running locally, so it can communicate with it.
 ## TODO
 
 - [ ] Verify support for OpenAI
-- [ ] Add tests
-- [ ] Add CI/CD
+- [x] Add tests
+- [x] Add CI/CD
 - [ ] Add ingress (nginx vs traefik)
 - [ ] Add traceability

@@ -12,15 +12,14 @@ from app.core.logger import logger
 
 class ChromaService:
     def __init__(self):
-        """Initialize the Chroma service with the appropriate embeddings."""
-        if settings.LLM_PROVIDER == "ollama":
-            self.embeddings = OllamaEmbeddings(
-                base_url=settings.OLLAMA_BASE_URL,
-                model=settings.OLLAMA_EMBEDDING_MODEL,
-            )
-
-        elif settings.LLM_PROVIDER == "openai":
-            self.embeddings = OpenAIEmbeddings(api_key=settings.OPENAI_API_KEY)
+        """Initialize the Chroma service with the appropriate embeddings.
+        Currently, we only support Ollama, supporting multiple embeddings means having multiple
+        chroma databases, which for the purpose of this project is not required.
+        """
+        self.embeddings = OllamaEmbeddings(
+            base_url=settings.OLLAMA_BASE_URL,
+            model=settings.OLLAMA_EMBEDDING_MODEL,
+        )
 
         Path(settings.chroma_path).mkdir(
             parents=True,

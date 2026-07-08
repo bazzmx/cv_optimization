@@ -10,7 +10,18 @@ Uses python 3.14
 
 ### Ollama
 
-The project mainly uses Ollama for the LLM. There is untested code to use OpenAI, but that feature is untested.
+The project mainly uses Ollama for the LLM.
+The main embedding provider is Ollama as well, using a different provided could cause incompatibilities with the vector database caused by the embedding size.
+
+### OpenAI
+
+To use OpenAI, you need to set the following environment variables:
+
+```
+OPENAI_API_KEY
+OPENAI_LLM_MODEL
+OPENAI_PROJECT_ID
+```
 
 ### Using UV for local development
 
@@ -95,7 +106,7 @@ This also assumes Ollama is running locally, so it can communicate with it.
 
 ## TODO
 
-- [ ] Verify support for OpenAI
+- [x] Verify support for OpenAI
 - [x] Add tests
 - [x] Add CI/CD
 - [ ] Add ingress (nginx vs traefik)
